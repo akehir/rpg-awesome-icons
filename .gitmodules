@@ -1,8 +1,8 @@
 [submodule "lib/rpg-awesome"]
 	path = lib/rpg-awesome
-	url = git@github.com:nagoshiashumari/Rpg-Awesome.git
+	url = https://github.com/nagoshiashumari/Rpg-Awesome.git
 	branch = master
 [submodule "lib/rpg-awesome-raw"]
 	path = lib/rpg-awesome-raw
-	url = git@github.com:nagoshiashumari/rpg-awesome-raw.git
+	url = https://github.com/nagoshiashumari/rpg-awesome-raw.git
 	branch = master
