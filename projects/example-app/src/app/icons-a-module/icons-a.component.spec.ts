@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IconsAComponent } from './icons-a.component';
+import { RpgAwesomeIconsModule } from '@triangular/rpg-awesome-icons';
 
 describe('IconsAComponent', () => {
   let component: IconsAComponent;
@@ -8,7 +9,10 @@ describe('IconsAComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IconsAComponent ]
+      declarations: [ IconsAComponent ],
+      imports: [
+        RpgAwesomeIconsModule,
+      ]
     })
     .compileComponents();
   }));

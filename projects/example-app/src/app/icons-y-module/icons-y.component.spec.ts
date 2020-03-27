@@ -1,14 +1,18 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IconsYComponent } from './icons-d.component';
+import { IconsYComponent } from './icons-y.component';
+import { RpgAwesomeIconsModule } from '@triangular/rpg-awesome-icons';
 
-describe('IconsDComponent', () => {
+describe('IconsYComponent', () => {
   let component: IconsYComponent;
   let fixture: ComponentFixture<IconsYComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ IconsYComponent ]
+      declarations: [ IconsYComponent ],
+      imports: [
+        RpgAwesomeIconsModule,
+      ]
     })
     .compileComponents();
   }));

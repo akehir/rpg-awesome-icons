@@ -10,7 +10,7 @@ The live demo can be found at https://rpg-awesome-icons.akehir.com.
 If you just want to use the library, follow the following 4 simple steps. For contributing, or building the library locally, see the section on [building](#building) the library.
 
 Supported Angular Versions
-| Angular Version | Password Checker Version |
+| Angular Version | Library Version          |
 | --------------- | ------------------------ |
 | 9.x             | 1.0.0                    |
 
@@ -146,7 +146,7 @@ We use [SemVer](http://semver.org/) for versioning.
 
 * **Raphael Ochsenbein** - *Initial work* - [Akehir](https://github.com/akehir)
 
-See also the list of [contributors](https://github.com/akehir/angular-password-checker/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/akehir/rpg-awesome-icons/contributors) who participated in this project.
 
 ## License
 

@@ -146,7 +146,7 @@ We use [SemVer](http://semver.org/) for versioning.
 
 * **Raphael Ochsenbein** - *Initial work* - [Akehir](https://github.com/akehir)
 
-See also the list of [contributors](https://github.com/akehir/angular-password-checker/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/akehir/rpg-awesome-icons/contributors) who participated in this project.
 
 ## License
 
