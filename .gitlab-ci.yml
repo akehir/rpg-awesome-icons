@@ -20,7 +20,7 @@ test:
 
   artifacts:
     paths:
-    - dist/rpg-awesome-icons-lib/
+    - dist/rpg-awesome-icons/
     - dist/example-app/
     expire_in: 1337 mins
 
