@@ -30,7 +30,7 @@ deploy_master:
      - rsync --delete -rlvvzhe ssh $CI_PROJECT_DIR/dist/example-app/ akehir@192.168.7.111:/app/web/projects/rpg-awesome-icons/master/ # syncronize from build server to local via rsync
      - nvm i
      - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>~/.npmrc
-     - cd $CI_PROJECT_DIR/dist/rpg-awesome-icons-lib
+     - cd $CI_PROJECT_DIR/dist/rpg-awesome-icons
      - npm publish --access public
      - rm -f ~/.npmrc
   after_script:
