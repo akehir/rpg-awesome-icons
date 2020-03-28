@@ -1,11 +1,11 @@
 {
   "name": "@triangular/rpg-awesome-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^9.0.0",
     "@angular/core": "^9.0.0"
   },
-  "homepage": "https://rpg-aweseome-icons.akehir.com",
+  "homepage": "https://rpg-awesome-icons.akehir.com",
   "license" : "MIT",
   "repository": {
     "type": "git",

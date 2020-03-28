@@ -14,7 +14,7 @@
     "test": "npm run test:lib && npm run test:example",
     "test:lib": "ng test rpg-awesome-icons-lib --no-watch --progress=false --code-coverage --browsers ChromeHeadless",
     "test:example": "ng test example-app --no-watch --progress=false --code-coverage --browsers ChromeHeadless",
-    "icons": "svg-to-ts -s /*.svg -o -f icons -p rpgAwesomeIcons -t RpgAwesomeIcon -i RpgAwesomeIcon",
+    "icons": "svg-to-ts -s /*.svg -o -f icons",
     "analyze": "ng build example-app --prod --stats-json && webpack-bundle-analyzer ./dist/example-app/stats-es2015.json",
     "lint": "ng lint",
     "e2e": "ng e2e example-app",

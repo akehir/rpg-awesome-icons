@@ -141,6 +141,7 @@ We use [SemVer](http://semver.org/) for versioning.
 ### Version History
 
 - 1.0.0: Initial Release
+- 1.0.1: Documentation Fixes
 
 ## Authors
 
