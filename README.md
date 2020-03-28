@@ -12,7 +12,7 @@ If you just want to use the library, follow the following 4 simple steps. For co
 Supported Angular Versions
 | Angular Version | Password Checker Version |
 | --------------- | ------------------------ |
-| 9.x             | 1.0.1                    |
+| 9.x             | 1.0.2                    |
 
 ### Step 1: Install
 
@@ -142,6 +142,7 @@ We use [SemVer](http://semver.org/) for versioning.
 
 - 1.0.0: Initial Release
 - 1.0.1: Documentation Fixes
+- 1.0.2: Update to Angular 9.1
 
 ## Authors
 
