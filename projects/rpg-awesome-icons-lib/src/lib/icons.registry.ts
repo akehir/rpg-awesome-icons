@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { RpgAwesomeIcon } from './icons';
+import { RpgAwesomeIcon } from '../icons';
 
 @Injectable({
   providedIn: 'root'
