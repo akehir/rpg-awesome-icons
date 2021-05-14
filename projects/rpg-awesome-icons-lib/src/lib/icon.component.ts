@@ -11,7 +11,7 @@ import { RpgAwesomeIconsRegistry } from './icons.registry';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
-  // tslint:disable-next-line:component-selector
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'rpg-awesome-icon',
   template: `<ng-content></ng-content>`,
   encapsulation: ViewEncapsulation.None,
