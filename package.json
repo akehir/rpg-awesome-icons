@@ -21,19 +21,6 @@
     "postversion": "git push --follow-tags"
   },
   "private": true,
-  "svg-to-ts": {
-    "conversionType": "files",
-    "modelFileName": "rpg-awesome-icon.model",
-    "srcFiles": [
-      "./lib/rpg-awesome-raw/Font/**/*.svg"
-    ],
-    "outputDirectory": "./projects/rpg-awesome-icons-lib/src/icons",
-    "interfaceName": "RpgAwesomeIcon",
-    "typeName": "rpgAwesomeIcon",
-    "prefix": "rpgAwesomeIcon",
-    "optimizeForLazyLoading": true,
-    "compileSources": true
-  },
   "dependencies": {
     "@angular/animations": "~13.0.2",
     "@angular/common": "~13.0.2",

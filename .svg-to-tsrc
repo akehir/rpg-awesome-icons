@@ -1,0 +1,13 @@
+{
+    "conversionType": "files",
+    "modelFileName": "rpg-awesome-icon.model",
+    "srcFiles": [
+      "./lib/rpg-awesome-raw/Font/**/*.svg"
+    ],
+    "outputDirectory": "./projects/rpg-awesome-icons-lib/src/icons",
+    "interfaceName": "RpgAwesomeIcon",
+    "typeName": "rpgAwesomeIcon",
+    "prefix": "rpgAwesomeIcon",
+    "optimizeForLazyLoading": true,
+    "compileSources": true
+}
