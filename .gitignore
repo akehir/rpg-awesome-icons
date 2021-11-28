@@ -45,5 +45,5 @@ testem.log
 Thumbs.db
 
 # Generated Code
-projects/rpg-awesome-icons-lib/src/icons/
-projects/rpg-awesome-icons-lib/src/lib/icons/
+projects/rpg-awesome-icons-lib/src/icons/src/index.ts
+projects/rpg-awesome-icons-lib/src/icons/src/build/

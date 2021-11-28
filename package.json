@@ -27,12 +27,12 @@
     "srcFiles": [
       "./lib/rpg-awesome-raw/Font/**/*.svg"
     ],
-    "outputDirectory": "./projects/rpg-awesome-icons-lib/src/icons",
+    "outputDirectory": "./projects/rpg-awesome-icons-lib/src/icons/src",
     "interfaceName": "RpgAwesomeIcon",
     "typeName": "rpgAwesomeIcon",
     "prefix": "rpgAwesomeIcon",
     "optimizeForLazyLoading": true,
-    "compileSources": true
+    "compileSources": false
   },
   "dependencies": {
     "@angular/animations": "~13.0.2",
