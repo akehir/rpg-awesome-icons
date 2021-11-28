@@ -16,7 +16,7 @@ Supported Angular Versions
 | 10.x            | 2.0.0                    |
 | 11.x            | 3.0.0                    |
 | 12.x            | 4.0.0                    |
-| 13.x            | 5.0.5                    |
+| 13.x            | 5.0.6                    |
 
 ### Step 1: Install
 
@@ -156,6 +156,7 @@ We use [SemVer](http://semver.org/) for versioning.
 - 5.0.3: Fix export of icons
 - 5.0.4: Fix export of icons
 - 5.0.5: Update svgo config
+- 5.0.6: Fix export of icons
 
 ## Authors
 
