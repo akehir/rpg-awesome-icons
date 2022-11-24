@@ -15,7 +15,5 @@
     "**/*.d.ts"
   ],
   "angularCompilerOptions": {
-    "enableIvy": true,
-    "compilationMode": "partial"
   }
 }

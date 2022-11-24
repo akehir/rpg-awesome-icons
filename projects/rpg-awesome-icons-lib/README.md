@@ -18,6 +18,7 @@ Supported Angular Versions
 | 12.x            | 4.0.0                    |
 | 13.x            | 5.0.6                    |
 | 14.x            | 6.0.0                    |
+| 15.x            | 7.0.0                    |
 
 ### Step 1: Install
 
@@ -141,23 +142,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. 
-
-### Version History
-
-- 1.0.0: Initial Release
-- 1.0.1: Documentation Fixes
-- 1.0.2: Update Angular to 9.1
-- 2.0.0: Update to Angular 10
-- 3.0.0: Update to Angular 11
-- 4.0.0: Update to Angular 12
-- 5.0.0: Update to Angular 13
-- 5.0.1: Upgrade rxjs to 7.4
-- 5.0.2: Upgrade svg-to-ts to 7.1
-- 5.0.3: Fix export of icons
-- 5.0.4: Fix export of icons
-- 5.0.5: Update svgo config
-- 5.0.6: Fix export of icons
+We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
