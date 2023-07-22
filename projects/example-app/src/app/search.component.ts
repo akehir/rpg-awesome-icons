@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Router } from '@angular/router';
 import { UntypedFormControl } from '@angular/forms';
 import { filter, map, throttleTime } from 'rxjs/operators';
 
@@ -526,9 +525,6 @@ export class SearchComponent implements OnInit {
     'zebra_shield',
     'zigzag_leaf',
   ];
-
-  constructor() {
-  }
 
   ngOnInit(): void {
     this.term.valueChanges.pipe(

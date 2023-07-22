@@ -3,8 +3,8 @@ import { RpgAwesomeIconComponent } from './icon.component';
 import { RpgAwesomeIconsRegistry } from './icons.registry';
 
 @NgModule({
-  declarations: [RpgAwesomeIconComponent],
-  imports: [],
+  declarations: [],
+  imports: [RpgAwesomeIconComponent],
   exports: [RpgAwesomeIconComponent]
 })
 export class RpgAwesomeIconsModule {

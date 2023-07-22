@@ -15,7 +15,8 @@ import { DOCUMENT } from '@angular/common';
   selector: 'rpg-awesome-icon',
   template: `<ng-content></ng-content>`,
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true
 })
 export class RpgAwesomeIconComponent {
   private svgIcon: SVGElement;
@@ -36,7 +37,7 @@ export class RpgAwesomeIconComponent {
   constructor(
     private element: ElementRef,
     private iconsRegistry: RpgAwesomeIconsRegistry,
-    @Optional() @Inject(DOCUMENT) private document: any,
+    @Optional() @Inject(DOCUMENT) private document: Document,
   ) {
   }
 
