@@ -19,6 +19,8 @@ build:
     - apt update
     - apt install chromium -y
     - export CHROME_BIN=/usr/bin/chromium
+    - git submodule sync --recursive
+    - git submodule update --init --recursive
     - npm i
   script:
     - npm run lint
