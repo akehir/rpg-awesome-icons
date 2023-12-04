@@ -17,9 +17,8 @@ build:
   image: node
   rules:
     - if: '$CI_COMMIT_REF_SLUG == "master"'
-      when: on_success
     - if: '$CI_COMMIT_REF_SLUG == "develop"'
-      when: on_success
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
   before_script:
     - apt update
     - apt install chromium -y
@@ -43,6 +42,7 @@ deploy:
   image: docker:24.0.5
   services:
     - docker:24.0.5-dind
+  needs: ['build']
   rules:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
       when: never
@@ -60,6 +60,7 @@ deploy:
 publish:
   stage: publish
   image: node
+  needs: ['build']
   rules:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
       when: never
