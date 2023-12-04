@@ -15,7 +15,7 @@
     "test:standalone": "ng test example-app-standalone --no-watch --progress=false --code-coverage --browsers ChromeHeadless",
     "test:standalone:docker": "ng test example-app-standalone --no-watch --progress=false --code-coverage --browsers ChromeDocker",
     "test:lib": "ng test rpg-awesome-icons-lib --no-watch --progress=false --code-coverage --browsers ChromeHeadless",
-    "test:lib:docker": "ng test password-checker-lib --no-watch --progress=false --code-coverage --browsers ChromeDocker",
+    "test:lib:docker": "ng test  rpg-awesome-icons-lib --no-watch --progress=false --code-coverage --browsers ChromeDocker",
     "test:example": "ng test example-app --no-watch --progress=false --code-coverage --browsers ChromeHeadless",
     "icons": "svg-to-ts-files -s /*.svg -o -f icons",
     "analyze": "ng build example-app --prod --stats-json && webpack-bundle-analyzer ./dist/example-app/stats-es2015.json",
