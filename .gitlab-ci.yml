@@ -38,7 +38,6 @@ deploy:
   image: docker:24.0.5
   services:
     - docker:24.0.5-dind
-  needs: ['build']
   rules:
     - if: '$CI_COMMIT_REF_SLUG == "master"'
       when: on_success
@@ -47,7 +46,7 @@ deploy:
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
       when: never
   variables:
-    IMAGE_TAG: $CI_REGISTRY_IMAGE/password-checker-example-app
+    IMAGE_TAG: $CI_REGISTRY_IMAGE/rpg-awesome-icons-example-app
   script:
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - docker build -t $IMAGE_TAG:latest -t $IMAGE_TAG:$CI_COMMIT_REF_SLUG -t $IMAGE_TAG:$CI_COMMIT_SHORT_SHA .
@@ -56,7 +55,6 @@ deploy:
 publish:
   stage: publish
   image: node
-  needs: ['build']
   rules:
     - if: '$CI_COMMIT_REF_SLUG == "master"'
       when: on_success
