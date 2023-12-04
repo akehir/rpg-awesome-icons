@@ -1,21 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: password-checker
+  name: rpg-awesome-icons
   namespace: triangular
 spec:
   selector:
     matchLabels:
-      app: password-checker
+      app: rpg-awesome-icons
   replicas: 1
   template:
     metadata:
       labels:
-        app: password-checker
+        app: rpg-awesome-icons
     spec:
       containers:
-      - name: password-checker-example-app
-        image: registry.akehir.com:5050/triangular/password-checker/password-checker-example-app:master
+      - name: rpg-awesome-icons-example-app
+        image: registry.akehir.com:5050/triangular/rpg-awesome-icons/rpg-awesome-icons-example-app:master
+        imagePullPolicy: Always
         ports:
         - containerPort: 8811
       imagePullSecrets:
