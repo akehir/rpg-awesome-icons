@@ -15,6 +15,11 @@ variables:
 build:
   stage: build
   image: node
+  rules:
+    - if: '$CI_COMMIT_REF_SLUG == "master"'
+      when: on_success
+    - if: '$CI_COMMIT_REF_SLUG == "develop"'
+      when: on_success
   before_script:
     - apt update
     - apt install chromium -y
@@ -39,12 +44,12 @@ deploy:
   services:
     - docker:24.0.5-dind
   rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: never
     - if: '$CI_COMMIT_REF_SLUG == "master"'
       when: on_success
     - if: '$CI_COMMIT_REF_SLUG == "develop"'
       when: on_success
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
-      when: never
   variables:
     IMAGE_TAG: $CI_REGISTRY_IMAGE/rpg-awesome-icons-example-app
   script:
@@ -56,10 +61,10 @@ publish:
   stage: publish
   image: node
   rules:
-    - if: '$CI_COMMIT_REF_SLUG == "master"'
-      when: on_success
     - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
       when: never
+    - if: '$CI_COMMIT_REF_SLUG == "master"'
+      when: on_success
   script:
       - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>~/.npmrc
       - cd $CI_PROJECT_DIR/dist/rpg-awesome-icons
