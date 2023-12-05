@@ -30,8 +30,7 @@ build:
     - npm run build
   artifacts:
     paths:
-    - dist/rpg-awesome-icons/
-    - dist/example-app/
+    - dist/
     expire_in: 1337 mins
 
 deploy:
