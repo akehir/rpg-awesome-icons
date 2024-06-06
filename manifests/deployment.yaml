@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: rpg-awesome-icons-example-app
-        image: registry.akehir.com:443/triangular/rpg-awesome-icons/rpg-awesome-icons-example-app:develop-af69fe3b-1717709486 # {"$imagepolicy": "triangular:rpg-awesome-icons-example-app-image-policy"}
+        image: registry.akehir.com:443/triangular/rpg-awesome-icons/rpg-awesome-icons-example-app:develop-a53a384d-1717709648 # {"$imagepolicy": "triangular:rpg-awesome-icons-example-app-image-policy"}
         imagePullPolicy: Always
         ports:
         - containerPort: 8811
