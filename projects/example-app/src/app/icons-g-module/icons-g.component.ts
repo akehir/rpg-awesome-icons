@@ -23,11 +23,13 @@ import {
   rpgAwesomeIconGuillotine,
 } from '@triangular/rpg-awesome-icons/icons';
 
+// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-g',
   templateUrl: './icons-g.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
+  standalone: false
 })
 export class IconsGComponent {
   icons = [
