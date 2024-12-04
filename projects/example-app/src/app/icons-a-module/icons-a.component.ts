@@ -28,11 +28,13 @@ import {
   rpgAwesomeIconAxe,
 } from '@triangular/rpg-awesome-icons/icons';
 
+// eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
   selector: 'app-icons-a',
   templateUrl: './icons-a.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
+  standalone: false
 })
 export class IconsAComponent {
   icons = [

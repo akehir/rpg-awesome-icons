@@ -66,15 +66,14 @@ import {
 import {NgForOf} from "@angular/common";
 
 @Component({
-  selector: 'app-icons-b',
-  templateUrl: './icons-b.component.html',
-  styleUrls: [],
-  encapsulation: ViewEncapsulation.None,
-  imports: [
-    NgForOf,
-    RpgAwesomeIconComponent
-  ],
-  standalone: true
+    selector: 'app-icons-b',
+    templateUrl: './icons-b.component.html',
+    styleUrls: [],
+    encapsulation: ViewEncapsulation.None,
+    imports: [
+        NgForOf,
+        RpgAwesomeIconComponent
+    ]
 })
 export class IconsBComponent {
   icons = [
