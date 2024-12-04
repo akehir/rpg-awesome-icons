@@ -1,4 +1,3 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,7 +15,7 @@ spec:
     spec:
       containers:
         - name: rpg-awesome-icons-example-app
-          image: registry.akehir.com:443/triangular/rpg-awesome-icons/rpg-awesome-icons-example-app:develop-fe2510fb-1727801074 # {"$imagepolicy": "triangular:rpg-awesome-icons-example-app-image-policy"}
+          image: registry.akehir.com:443/triangular/rpg-awesome-icons/rpg-awesome-icons-example-app:develop-912ab776-1733323411 # {"$imagepolicy": "triangular:rpg-awesome-icons-example-app-image-policy"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8811
@@ -32,4 +31,3 @@ spec:
                     operator: In
                     values:
                       - arm64
----
