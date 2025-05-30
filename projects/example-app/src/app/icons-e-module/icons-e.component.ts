@@ -14,7 +14,7 @@ import {
   rpgAwesomeIconEyeball,
 } from '@triangular/rpg-awesome-icons';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
+/* eslint-disable @angular-eslint/prefer-standalone */
 @Component({
   selector: 'app-icons-e',
   templateUrl: './icons-e.component.html',

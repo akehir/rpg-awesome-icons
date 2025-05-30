@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { UntypedFormControl } from '@angular/forms';
 import { filter, map, throttleTime } from 'rxjs/operators';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
+/* eslint-disable @angular-eslint/prefer-standalone */
 @Component({
   selector: 'app-search',
   template: `

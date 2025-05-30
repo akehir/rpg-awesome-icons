@@ -12,7 +12,7 @@ import {
   rpgAwesomeIconWyvern,
 } from '@triangular/rpg-awesome-icons';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
+/* eslint-disable @angular-eslint/prefer-standalone */
 @Component({
   selector: 'app-icons-w',
   templateUrl: './icons-w.component.html',
