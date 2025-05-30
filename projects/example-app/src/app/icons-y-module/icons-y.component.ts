@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { RpgAwesomeIconsRegistry, } from '@triangular/rpg-awesome-icons';
 
 import {
-} from '@triangular/rpg-awesome-icons';
+} from '@triangular/rpg-awesome-icons/icons';
 
 /* eslint-disable @angular-eslint/prefer-standalone */
 @Component({

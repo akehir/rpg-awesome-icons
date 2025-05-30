@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
-import { RpgAwesomeIcon } from '../icons';
+
+interface AnyRegistryIcon {
+  name: string;
+  data: string;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -8,8 +12,8 @@ export class RpgAwesomeIconsRegistry {
 
   private registry = new Map<string, string>();
 
-  public registerIcons(icons: RpgAwesomeIcon[]): void {
-    icons.forEach((icon: RpgAwesomeIcon) => this.registry.set(icon.name, icon.data));
+  public registerIcons(icons: AnyRegistryIcon[]): void {
+    icons.forEach((icon: AnyRegistryIcon) => this.registry.set(icon.name, icon.data));
   }
 
   public getIcon(iconName: string): string | undefined {
