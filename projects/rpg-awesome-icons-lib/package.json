@@ -20,5 +20,13 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
+  },
+  "exports": {
+    "./icons": {
+      "types": "./index.d.ts",
+      "esm2020": "./icons/index.mjs",
+      "esm": "./icons/index.mjs",
+      "default": "./icons/index.mjs"
+    }
   }
 }
