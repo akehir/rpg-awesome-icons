@@ -18,7 +18,7 @@ import { RpgAwesomeIconsRegistry } from '@triangular/rpg-awesome-icons';
 import {
   rpgAwesomeIconAnkh,
   // add more icons here
-} from '@triangular/rpg-awesome-icons';
+} from '@triangular/rpg-awesome-icons/icons';
 
 @Component({
   selector: 'app-some-component-with-icons',
@@ -40,7 +40,7 @@ import { RpgAwesomeIconComponent, RpgAwesomeIconsRegistry } from '@triangular/rp
 import {
   rpgAwesomeIconAnkh,
   // add more icons here
-} from '@triangular/rpg-awesome-icons';
+} from '@triangular/rpg-awesome-icons/icons';
 
 @Component({
   selector: 'app-some-component-with-icons',

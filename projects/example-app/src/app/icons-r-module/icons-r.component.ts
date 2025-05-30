@@ -22,7 +22,7 @@ import {
   rpgAwesomeIconRoundShield,
   rpgAwesomeIconRss,
   rpgAwesomeIconRuneStone,
-} from '@triangular/rpg-awesome-icons';
+} from '@triangular/rpg-awesome-icons/icons';
 
 /* eslint-disable @angular-eslint/prefer-standalone */
 @Component({
