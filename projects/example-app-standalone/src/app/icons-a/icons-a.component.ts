@@ -26,8 +26,8 @@ import {
   rpgAwesomeIconAware,
   rpgAwesomeIconAxeSwing,
   rpgAwesomeIconAxe,
-} from '@triangular/rpg-awesome-icons/icons';
-import {NgForOf} from "@angular/common";
+} from '@triangular/rpg-awesome-icons';
+
 
 @Component({
     selector: 'app-icons-a',
@@ -35,9 +35,8 @@ import {NgForOf} from "@angular/common";
     styleUrls: [],
     encapsulation: ViewEncapsulation.None,
     imports: [
-        NgForOf,
-        RpgAwesomeIconComponent
-    ]
+    RpgAwesomeIconComponent
+]
 })
 export class IconsAComponent {
   icons = [

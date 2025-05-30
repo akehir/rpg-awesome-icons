@@ -9,3 +9,4 @@
 export * from './lib/icon.component';
 export * from './lib/icons.registry';
 export * from './lib/icons.module';
+export * from './icons';

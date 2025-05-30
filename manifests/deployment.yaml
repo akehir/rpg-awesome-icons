@@ -7,7 +7,12 @@ spec:
   selector:
     matchLabels:
       app: rpg-awesome-icons
-  replicas: 1
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 1
   template:
     metadata:
       labels:
@@ -15,7 +20,7 @@ spec:
     spec:
       containers:
         - name: rpg-awesome-icons-example-app
-          image: registry.akehir.com:443/triangular/rpg-awesome-icons/rpg-awesome-icons-example-app:develop-e882214c-1733324559 # {"$imagepolicy": "triangular:rpg-awesome-icons-example-app-image-policy"}
+          image: registry.akehir.com:443/triangular/rpg-awesome-icons/rpg-awesome-icons-example-app:develop-209c8838-1748637199 # {"$imagepolicy": "triangular:rpg-awesome-icons-example-app-image-policy"}
           imagePullPolicy: Always
           ports:
             - containerPort: 8811
@@ -31,3 +36,12 @@ spec:
                     operator: In
                     values:
                       - arm64
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: module
+                    operator: In
+                    values:
+                      - rpg-awesome-icons
+              topologyKey: "kubernetes.io/hostname"

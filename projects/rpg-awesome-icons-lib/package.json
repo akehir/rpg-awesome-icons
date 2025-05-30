@@ -1,9 +1,9 @@
 {
   "name": "@triangular/rpg-awesome-icons",
-  "version": "11.0.0",
+  "version": "20.0.0",
   "peerDependencies": {
-    "@angular/common": "^19.0.0",
-    "@angular/core": "^19.0.0"
+    "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0"
   },
   "homepage": "https://rpg-awesome-icons.akehir.com",
   "license" : "MIT",
@@ -20,13 +20,5 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  },
-  "exports": {
-    "./icons": {
-      "types": "./index.d.ts",
-      "esm2020": "./icons/index.mjs",
-      "esm": "./icons/index.mjs",
-      "default": "./icons/index.mjs"
-    }
   }
 }

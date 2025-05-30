@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import {usage, component, ngModule, standaloneComponent} from './code';
 
-// eslint-disable-next-line @angular-eslint/prefer-standalone
+/* eslint-disable @angular-eslint/prefer-standalone */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

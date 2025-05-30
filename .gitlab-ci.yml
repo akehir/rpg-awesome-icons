@@ -1,8 +1,8 @@
 ---
 stages:
-- build
-- deploy
-- publish
+  - build
+  - deploy
+  - publish
 
 build:
   stage: build
@@ -22,8 +22,15 @@ build:
     - npm run build
   artifacts:
     paths:
-    - dist/
+      - dist/
     expire_in: 1337 mins
+
+yaml-lint:
+  stage: build
+  image: registry.akehir.com/infra/yamllint/yamllint
+  script:
+    - yamllint --list-files .
+    - yamllint .
 
 deploy:
   stage: deploy
@@ -56,13 +63,6 @@ deploy:
     - docker build -t $IMAGE_TAG:latest -t $IMAGE_TAG:$CI_COMMIT_REF_SLUG -t $IMAGE_TAG:$CI_COMMIT_SHORT_SHA -t $IMAGE_TAG:${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA}-$(date +%s) .
     - docker push $IMAGE_TAG -a
 
-yaml-lint:
-  stage: build
-  image: registry.akehir.com/infra/yamllint/yamllint
-  script:
-    - yamllint --list-files .
-    - yamllint .
-
 publish:
   stage: publish
   image: node:lts-alpine
@@ -73,8 +73,8 @@ publish:
     - if: '$CI_COMMIT_REF_SLUG == "master"'
       when: on_success
   script:
-      - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>~/.npmrc
-      - cd $CI_PROJECT_DIR/dist/rpg-awesome-icons
-      - npm publish --access public
+    - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>~/.npmrc
+    - cd $CI_PROJECT_DIR/dist/rpg-awesome-icons
+    - npm publish --access public
   after_script:
     - rm -f ~/.npmrc

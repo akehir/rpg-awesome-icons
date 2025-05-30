@@ -9,5 +9,5 @@
     "typeName": "rpgAwesomeIcon",
     "prefix": "rpgAwesomeIcon",
     "optimizeForLazyLoading": true,
-    "compileSources": true
+    "compileSources": false
 }

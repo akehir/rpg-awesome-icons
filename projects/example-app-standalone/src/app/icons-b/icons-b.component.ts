@@ -62,8 +62,8 @@ import {
   rpgAwesomeIconBurningMeteor,
   rpgAwesomeIconBurstBlob,
   rpgAwesomeIconButterfly,
-} from '@triangular/rpg-awesome-icons/icons';
-import {NgForOf} from "@angular/common";
+} from '@triangular/rpg-awesome-icons';
+
 
 @Component({
     selector: 'app-icons-b',
@@ -71,9 +71,8 @@ import {NgForOf} from "@angular/common";
     styleUrls: [],
     encapsulation: ViewEncapsulation.None,
     imports: [
-        NgForOf,
-        RpgAwesomeIconComponent
-    ]
+    RpgAwesomeIconComponent
+]
 })
 export class IconsBComponent {
   icons = [

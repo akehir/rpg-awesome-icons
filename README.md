@@ -23,6 +23,7 @@ Supported Angular Versions
 | 17.x            |  9.0.0                   |
 | 18.x            | 10.0.1  - 10.2.0         |
 | 19.x            | 11.0.0                   |
+| 20.x            | 20.0.0                   |
 
 ### Step 1: Install
 
@@ -53,7 +54,7 @@ export class AppModule { }
 ```
 
 ### Step 3: Register the Icons in the Registry
-The tree-shaking magic happens when you import icons from   __@triangular/rpg-awesome-icons/icons__ and register them in the  __RpgAwesomeIconsRegistry__. By explicitly importing the icons where they are required, the tree shaking can ensure they are loaded when they are needed. If an icon is not required, it will not be bundled in your application. If an icon is required in a feature module, it will be bundled with the feature module. And if the icon is bundled in multiple feature modules, it will be bundled with the common bundle - in order to not download the same icon multiple times.
+The tree-shaking magic happens when you import icons from   __@triangular/rpg-awesome-icons__ and register them in the  __RpgAwesomeIconsRegistry__. By explicitly importing the icons where they are required, the tree shaking can ensure they are loaded when they are needed. If an icon is not required, it will not be bundled in your application. If an icon is required in a feature module, it will be bundled with the feature module. And if the icon is bundled in multiple feature modules, it will be bundled with the common bundle - in order to not download the same icon multiple times.
 
 #### Step 3a: Angular App with Modules
 ```typescript
@@ -62,7 +63,7 @@ import { RpgAwesomeIconsRegistry } from '@triangular/rpg-awesome-icons';
 import {
   rpgAwesomeIconAnkh,
   // add more icons here
-} from '@triangular/rpg-awesome-icons/icons';
+} from '@triangular/rpg-awesome-icons';
 
 @Component({
   selector: 'app-some-component-with-icons',
@@ -87,7 +88,7 @@ import { RpgAwesomeIconComponent, RpgAwesomeIconsRegistry } from '@triangular/rp
 import {
   rpgAwesomeIconAnkh,
   // add more icons here
-} from '@triangular/rpg-awesome-icons/icons';
+} from '@triangular/rpg-awesome-icons';
 
 @Component({
   selector: 'app-some-component-with-icons',
