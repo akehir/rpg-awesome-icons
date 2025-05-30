@@ -26,7 +26,7 @@ import {
   rpgAwesomeIconAware,
   rpgAwesomeIconAxeSwing,
   rpgAwesomeIconAxe,
-} from '@triangular/rpg-awesome-icons/icons';
+} from '@triangular/rpg-awesome-icons';
 
 
 @Component({

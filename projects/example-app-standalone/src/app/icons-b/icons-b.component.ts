@@ -62,7 +62,7 @@ import {
   rpgAwesomeIconBurningMeteor,
   rpgAwesomeIconBurstBlob,
   rpgAwesomeIconButterfly,
-} from '@triangular/rpg-awesome-icons/icons';
+} from '@triangular/rpg-awesome-icons';
 
 
 @Component({

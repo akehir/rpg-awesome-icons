@@ -8,7 +8,7 @@ import {
   rpgAwesomeIconVial,
   rpgAwesomeIconVineWhip,
   rpgAwesomeIconVirgo,
-} from '@triangular/rpg-awesome-icons/icons';
+} from '@triangular/rpg-awesome-icons';
 
 // eslint-disable-next-line @angular-eslint/prefer-standalone
 @Component({
