@@ -1,8 +1,7 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, inject } from '@angular/core';
 import { RpgAwesomeIconsRegistry, } from '@triangular/rpg-awesome-icons';
 
-import {
-} from '@triangular/rpg-awesome-icons/icons';
+
 
 /* eslint-disable @angular-eslint/prefer-standalone */
 @Component({
@@ -13,10 +12,14 @@ import {
   standalone: false
 })
 export class IconsYComponent {
+  private registry = inject(RpgAwesomeIconsRegistry);
+
   icons = [
   ];
 
-  constructor(private registry: RpgAwesomeIconsRegistry) {
+  constructor() {
+    const registry = this.registry;
+
     registry.registerIcons(this.icons);
   }
 

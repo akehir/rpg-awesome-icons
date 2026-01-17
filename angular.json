@@ -170,7 +170,6 @@
             },
             "index": "projects/example-app-standalone/src/index.html",
             "polyfills": [
-              "zone.js"
             ],
             "tsConfig": "projects/example-app-standalone/tsconfig.app.json",
             "assets": [
@@ -230,8 +229,6 @@
           "builder": "@angular/build:karma",
           "options": {
             "polyfills": [
-              "zone.js",
-              "zone.js/testing"
             ],
             "tsConfig": "projects/example-app-standalone/tsconfig.spec.json",
             "assets": [
@@ -260,7 +257,8 @@
   "cli": {
     "schematicCollections": [
       "@angular-eslint/schematics"
-    ]
+    ],
+    "analytics": false
   },
   "schematics": {
     "@angular-eslint/schematics:application": {
