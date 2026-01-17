@@ -1,21 +1,25 @@
-import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IconsBComponent } from './icons-b.component';
 import { RpgAwesomeIconsModule } from '@triangular/rpg-awesome-icons';
+import {provideZonelessChangeDetection} from "@angular/core";
 
 describe('IconsBComponent', () => {
   let component: IconsBComponent;
   let fixture: ComponentFixture<IconsBComponent>;
 
-  beforeEach(waitForAsync(() => {
+  beforeEach(() =>
     TestBed.configureTestingModule({
       declarations: [ IconsBComponent ],
       imports: [
         RpgAwesomeIconsModule,
+      ],
+      providers: [
+        provideZonelessChangeDetection()
       ]
     })
-    .compileComponents();
-  }));
+    .compileComponents()
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(IconsBComponent);

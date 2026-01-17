@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, inject } from '@angular/core';
 import { RpgAwesomeIconsRegistry, } from '@triangular/rpg-awesome-icons';
 
 import {
@@ -66,6 +66,8 @@ import {
   standalone: false
 })
 export class IconsCComponent {
+  private registry = inject(RpgAwesomeIconsRegistry);
+
   icons = [
     rpgAwesomeIconCampfire,
     rpgAwesomeIconCancel,
@@ -122,7 +124,9 @@ export class IconsCComponent {
     rpgAwesomeIconCycle,
   ];
 
-  constructor(private registry: RpgAwesomeIconsRegistry) {
+  constructor() {
+    const registry = this.registry;
+
     registry.registerIcons(this.icons);
   }
 
