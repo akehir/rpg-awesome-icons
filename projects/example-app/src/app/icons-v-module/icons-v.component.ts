@@ -1,5 +1,9 @@
-import { Component, ViewEncapsulation, inject } from '@angular/core';
-import { RpgAwesomeIconsRegistry, } from '@triangular/rpg-awesome-icons';
+import {
+  Component,
+  ViewEncapsulation,
+  inject,
+} from "@angular/core";
+import { RpgAwesomeIconsRegistry } from "@triangular/rpg-awesome-icons";
 
 import {
   rpgAwesomeIconVase,
@@ -8,15 +12,15 @@ import {
   rpgAwesomeIconVial,
   rpgAwesomeIconVineWhip,
   rpgAwesomeIconVirgo,
-} from '@triangular/rpg-awesome-icons/icons';
+} from "@triangular/rpg-awesome-icons/icons";
 
 /* eslint-disable @angular-eslint/prefer-standalone */
 @Component({
-  selector: 'app-icons-v',
-  templateUrl: './icons-v.component.html',
+  selector: "app-icons-v",
+  templateUrl: "./icons-v.component.html",
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false
+  standalone: false,
 })
 export class IconsVComponent {
   private registry = inject(RpgAwesomeIconsRegistry);
@@ -35,5 +39,4 @@ export class IconsVComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }

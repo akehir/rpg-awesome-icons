@@ -1,7 +1,12 @@
-import { Component, ViewEncapsulation, inject } from '@angular/core';
-import { RpgAwesomeIconsRegistry, } from '@triangular/rpg-awesome-icons';
+import {
+  Component,
+  ViewEncapsulation,
+  inject,
+} from "@angular/core";
+import { RpgAwesomeIconsRegistry } from "@triangular/rpg-awesome-icons";
 
-import {rpgAwesomeIconLanternFlame,
+import {
+  rpgAwesomeIconLanternFlame,
   rpgAwesomeIconLargeHammer,
   rpgAwesomeIconLaserBlast,
   rpgAwesomeIconLaserSite,
@@ -28,20 +33,21 @@ import {rpgAwesomeIconLanternFlame,
   rpgAwesomeIconLoad,
   rpgAwesomeIconLockedFortress,
   rpgAwesomeIconLoveHowl,
-} from '@triangular/rpg-awesome-icons/icons';
+} from "@triangular/rpg-awesome-icons/icons";
 
 /* eslint-disable @angular-eslint/prefer-standalone */
 @Component({
-  selector: 'app-icons-l',
-  templateUrl: './icons-l.component.html',
+  selector: "app-icons-l",
+  templateUrl: "./icons-l.component.html",
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  standalone: false
+  standalone: false,
 })
 export class IconsLComponent {
   private registry = inject(RpgAwesomeIconsRegistry);
 
-  icons = [rpgAwesomeIconLanternFlame,
+  icons = [
+    rpgAwesomeIconLanternFlame,
     rpgAwesomeIconLargeHammer,
     rpgAwesomeIconLaserBlast,
     rpgAwesomeIconLaserSite,
@@ -75,5 +81,4 @@ export class IconsLComponent {
 
     registry.registerIcons(this.icons);
   }
-
 }
