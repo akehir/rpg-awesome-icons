@@ -2,7 +2,6 @@ import {
   Component,
   OnInit,
   ViewEncapsulation,
-  ChangeDetectionStrategy,
 } from "@angular/core";
 import { UntypedFormControl } from "@angular/forms";
 import { filter, map, throttleTime } from "rxjs/operators";
@@ -37,12 +36,11 @@ import { filter, map, throttleTime } from "rxjs/operators";
   `,
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false,
 })
 export class SearchComponent implements OnInit {
   term = new UntypedFormControl("");
-  results = [];
+  results: string[] = [];
   icons = [
     "acid",
     "acorn",

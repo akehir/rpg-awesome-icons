@@ -2,7 +2,6 @@ import {
   Component,
   ViewEncapsulation,
   inject,
-  ChangeDetectionStrategy,
 } from "@angular/core";
 import { RpgAwesomeIconsRegistry } from "@triangular/rpg-awesome-icons";
 
@@ -24,7 +23,6 @@ import {
   templateUrl: "./icons-k.component.html",
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false,
 })
 export class IconsKComponent {
