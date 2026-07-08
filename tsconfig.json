@@ -1,7 +1,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "esModuleInterop": true,
     "sourceMap": true,
@@ -16,10 +15,10 @@
     ],
     "paths": {
       "@triangular/rpg-awesome-icons": [
-        "dist/rpg-awesome-icons"
+        "./dist/rpg-awesome-icons"
       ],
       "@triangular/rpg-awesome-icons/*": [
-        "dist/rpg-awesome-icons/*"
+        "./dist/rpg-awesome-icons/*"
       ]
     },
     "useDefineForClassFields": false
