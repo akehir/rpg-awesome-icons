@@ -5,15 +5,13 @@ import { RpgAwesomeIconsRegistry } from './icons.registry';
 @NgModule({
   declarations: [],
   imports: [RpgAwesomeIconComponent],
-  exports: [RpgAwesomeIconComponent]
+  exports: [RpgAwesomeIconComponent],
 })
 export class RpgAwesomeIconsModule {
   static forRoot(): ModuleWithProviders<RpgAwesomeIconsModule> {
     return {
       ngModule: RpgAwesomeIconsModule,
-      providers: [
-        RpgAwesomeIconsRegistry,
-      ],
+      providers: [RpgAwesomeIconsRegistry],
     };
   }
 }

@@ -10,16 +10,10 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "typeRoots": ["node_modules/@types"],
     "paths": {
-      "@triangular/rpg-awesome-icons": [
-        "./dist/rpg-awesome-icons"
-      ],
-      "@triangular/rpg-awesome-icons/*": [
-        "./dist/rpg-awesome-icons/*"
-      ]
+      "@triangular/rpg-awesome-icons": ["./dist/rpg-awesome-icons"],
+      "@triangular/rpg-awesome-icons/*": ["./dist/rpg-awesome-icons/*"]
     },
     "useDefineForClassFields": false
   }

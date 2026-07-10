@@ -1,9 +1,5 @@
-import {
-  Component,
-  ViewEncapsulation,
-  inject,
-} from "@angular/core";
-import { RpgAwesomeIconsRegistry } from "@triangular/rpg-awesome-icons";
+import { Component, ViewEncapsulation, inject } from '@angular/core';
+import { RpgAwesomeIconsRegistry } from '@triangular/rpg-awesome-icons';
 
 import {
   rpgAwesomeIconGamepadCross,
@@ -25,12 +21,12 @@ import {
   rpgAwesomeIconGroundbreaker,
   rpgAwesomeIconGuardedTower,
   rpgAwesomeIconGuillotine,
-} from "@triangular/rpg-awesome-icons/icons";
+} from '@triangular/rpg-awesome-icons/icons';
 
 /* eslint-disable @angular-eslint/prefer-standalone */
 @Component({
-  selector: "app-icons-g",
-  templateUrl: "./icons-g.component.html",
+  selector: 'app-icons-g',
+  templateUrl: './icons-g.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   standalone: false,

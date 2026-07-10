@@ -1,19 +1,15 @@
-import {
-  Component,
-  ViewEncapsulation,
-  inject,
-} from "@angular/core";
-import { RpgAwesomeIconsRegistry } from "@triangular/rpg-awesome-icons";
+import { Component, ViewEncapsulation, inject } from '@angular/core';
+import { RpgAwesomeIconsRegistry } from '@triangular/rpg-awesome-icons';
 
 import {
   rpgAwesomeIconQueenCrown,
   rpgAwesomeIconQuillInk,
-} from "@triangular/rpg-awesome-icons/icons";
+} from '@triangular/rpg-awesome-icons/icons';
 
 /* eslint-disable @angular-eslint/prefer-standalone */
 @Component({
-  selector: "app-icons-q",
-  templateUrl: "./icons-q.component.html",
+  selector: 'app-icons-q',
+  templateUrl: './icons-q.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   standalone: false,

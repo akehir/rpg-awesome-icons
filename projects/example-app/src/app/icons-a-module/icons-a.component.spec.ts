@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IconsAComponent } from './icons-a.component';
 import { RpgAwesomeIconsModule } from '@triangular/rpg-awesome-icons';
-import {provideZonelessChangeDetection} from "@angular/core";
+import { provideZonelessChangeDetection } from '@angular/core';
 
 describe('IconsAComponent', () => {
   let component: IconsAComponent;
@@ -10,15 +10,10 @@ describe('IconsAComponent', () => {
 
   beforeEach(() =>
     TestBed.configureTestingModule({
-      declarations: [ IconsAComponent ],
-      imports: [
-        RpgAwesomeIconsModule,
-      ],
-      providers: [
-        provideZonelessChangeDetection()
-      ]
-    })
-    .compileComponents()
+      declarations: [IconsAComponent],
+      imports: [RpgAwesomeIconsModule],
+      providers: [provideZonelessChangeDetection()],
+    }).compileComponents()
   );
 
   beforeEach(() => {

@@ -1,12 +1,8 @@
-import {
-  Component,
-  ViewEncapsulation,
-  inject,
-} from "@angular/core";
+import { Component, ViewEncapsulation, inject } from '@angular/core';
 import {
   RpgAwesomeIconComponent,
   RpgAwesomeIconsRegistry,
-} from "@triangular/rpg-awesome-icons";
+} from '@triangular/rpg-awesome-icons';
 
 import {
   rpgAwesomeIconAcid,
@@ -33,11 +29,11 @@ import {
   rpgAwesomeIconAware,
   rpgAwesomeIconAxeSwing,
   rpgAwesomeIconAxe,
-} from "@triangular/rpg-awesome-icons/icons";
+} from '@triangular/rpg-awesome-icons/icons';
 
 @Component({
-  selector: "app-icons-a",
-  templateUrl: "./icons-a.component.html",
+  selector: 'app-icons-a',
+  templateUrl: './icons-a.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,
   imports: [RpgAwesomeIconComponent],

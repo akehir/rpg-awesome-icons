@@ -4,24 +4,19 @@ import { SearchComponent } from './search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RpgAwesomeIconsModule } from '@triangular/rpg-awesome-icons';
 import { RouterTestingModule } from '@angular/router/testing';
-import {provideZonelessChangeDetection} from "@angular/core";
+import { provideZonelessChangeDetection } from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(() =>
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent,
-        SearchComponent,
-      ],
+      declarations: [AppComponent, SearchComponent],
       imports: [
         FormsModule,
         ReactiveFormsModule,
         RouterTestingModule,
         RpgAwesomeIconsModule,
       ],
-      providers: [
-        provideZonelessChangeDetection()
-      ]
+      providers: [provideZonelessChangeDetection()],
     }).compileComponents()
   );
 
@@ -41,6 +36,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Angular RpgAwesome Lazy Loaded Icon Lib');
+    expect(compiled.querySelector('h1').textContent).toContain(
+      'Angular RpgAwesome Lazy Loaded Icon Lib'
+    );
   });
 });

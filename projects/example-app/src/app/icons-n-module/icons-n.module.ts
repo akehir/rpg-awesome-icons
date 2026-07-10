@@ -4,16 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { IconsNComponent } from './icons-n.component';
 import { RpgAwesomeIconsModule } from '@triangular/rpg-awesome-icons';
 
-const routes: Routes = [
-  { path: '', component: IconsNComponent }
-];
+const routes: Routes = [{ path: '', component: IconsNComponent }];
 
 @NgModule({
   declarations: [IconsNComponent],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-    RpgAwesomeIconsModule,
-  ]
+  imports: [CommonModule, RouterModule.forChild(routes), RpgAwesomeIconsModule],
 })
-export class IconsNModule { }
+export class IconsNModule {}
