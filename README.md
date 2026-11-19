@@ -163,8 +163,13 @@ npm run analyze
 There are not many tests, but those that are can be run with:
 
 ```
-npm run test -- --no-watch --progress=false --code-coverage --browsers ChromeHeadless
+npm run test
 ```
+
+Tests run on [Jest](https://jestjs.io/) via
+[jest-preset-angular](https://github.com/thymikee/jest-preset-angular).
+Individual projects can be tested with `npm run test:lib`,
+`npm run test:example` or `npm run test:standalone`.
 
 ### And coding style tests
 
