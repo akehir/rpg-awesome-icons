@@ -4,7 +4,7 @@ import { IconsWComponent } from './icons-w.component';
 import { RpgAwesomeIconsModule } from '@triangular/rpg-awesome-icons';
 import { provideZonelessChangeDetection } from '@angular/core';
 
-describe('IconsDComponent', () => {
+describe('IconsWComponent', () => {
   let component: IconsWComponent;
   let fixture: ComponentFixture<IconsWComponent>;
 
